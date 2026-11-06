@@ -1,8 +1,9 @@
 name: daily
 
 on:
-  schedule:
-    - cron: "17 11 * * 1-5" # 08:17 in Argentina (UTC-3), weekdays
+  # Uncomment to run every weekday at 08:17 in Argentina (UTC-3) once the secrets are set.
+  # schedule:
+  #   - cron: "17 11 * * 1-5"
   workflow_dispatch:
     inputs:
       dry_run:
