@@ -7,7 +7,7 @@ I built it for my own job search and to share openings with friends. It is delib
 ## How it works
 
 ```
-GitHub Actions (weekdays 08:17 ART)
+GitHub Actions (cron, weekdays)
   └─ fetch    public ATS APIs (Greenhouse, Ashby, Lever) + Remote OK
   └─ for each profile:
        ├─ memory      skip jobs already screened for this person      (Supabase)
@@ -36,6 +36,7 @@ Each assessment returns `suggest`, `review` or `discard`. **`review` is the esca
 3. Create a [Resend](https://resend.com) API key. To email anyone other than yourself, verify a sending domain and set `MAIL_FROM`.
 4. In the repo settings, add secrets `ANTHROPIC_API_KEY`, `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, `RESEND_API_KEY`, and optional variables `MAIL_FROM` and `MODEL`.
 5. Run the **daily** workflow manually with `dry_run` checked to see a digest in the logs.
+6. Uncomment the `schedule` block in [`.github/workflows/daily.yml`](.github/workflows/daily.yml) to run it every weekday.
 
 Sources are listed in [`config/sources.json`](config/sources.json); add a company by its Greenhouse, Ashby or Lever board token.
 
