@@ -1,0 +1,48 @@
+{
+  "id": "example",
+  "name": "Mariano",
+  "email": "you@example.com",
+  "summary": "AI-native full-stack engineer, ~7 years. TypeScript, Next.js, React, Vue 3, Node.js, PostgreSQL/Supabase; production LLM work (RAG with pgvector, Claude/OpenAI APIs, MCP servers). Python intermediate. Lives in Argentina (UTC-3), fluent English. Wants 100% remote work as a contractor paid from abroad; not employment under Argentine payroll. Eligible only if the posting accepts Argentina, LATAM or worldwide candidates; discard roles that require residency or work authorization elsewhere. Good fits: AI/LLM engineer, AI-native full-stack or product engineer, forward-deployed engineer, senior frontend with AI. Poor fits: Go/Java/Rails/PHP/C#-primary roles, Python-primary roles needing years of production Python, 10+ years required, management-heavy Staff/Lead roles. Pay floor USD 5,000/month. Salary ask rule: if a range is posted, its 75th percentile in the posting's unit; if not, USD 8,000/month.",
+  "rules": {
+    "titleInclude": [
+      "engineer",
+      "developer",
+      "programmer"
+    ],
+    "titleExclude": [
+      "java",
+      "go",
+      "golang",
+      ".net",
+      "c#",
+      "php",
+      "ruby",
+      "rails",
+      "android",
+      "ios",
+      "qa",
+      "test",
+      "devops",
+      "sre",
+      "data engineer",
+      "manager",
+      "director",
+      "principal",
+      "intern",
+      "junior"
+    ],
+    "locationExclude": [
+      "us only",
+      "usa only",
+      "united states only",
+      "canada only",
+      "uk only",
+      "india",
+      "europe only",
+      "emea only"
+    ],
+    "minMonthlyUsd": 5000,
+    "maxAgeDays": 4
+  },
+  "active": true
+}
